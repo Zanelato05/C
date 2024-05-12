@@ -396,4 +396,5 @@ int main (){//ÍNICIO.
 }while(voltar != 2);//Se o usuário acertar a senha ele tem a opção de voltar ao menu principal.
 
 	return 0;//FIM.
+	   
 }
