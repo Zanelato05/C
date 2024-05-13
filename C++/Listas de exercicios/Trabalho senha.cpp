@@ -25,6 +25,8 @@ int main (){//ÍNICIO.
 			int vid = 8;//Nível fácil recebe oito tentativas
 			int vidas = 10;//Nível médio recebe dez tentativas
 			int vida = 12;//Nível difícil recebe doze tentativas
+			int acertounumeroelocal = 0;
+			int acertounumero = 0;
 			
 	system("cls");
 	
@@ -108,7 +110,7 @@ int main (){//ÍNICIO.
 
     } while(a4 == a3 || a4 == a2 || a4 == a1);//Gero uma senha aletória de '4' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
-    //	cout << a1 << a2 << a3 << a4;
+    	cout << a1 << a2 << a3 << a4;
     	cout << "Nesse nível você precisa descobrir uma senha de 4 dígitos em apenas 10 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n\n";
 		system("pause");
@@ -170,7 +172,7 @@ int main (){//ÍNICIO.
             }
             
             cout << "\nAcertou " << acertounumeroelocal << " números no lugar certo" << endl;//Mostro quantos números estão certos e no lugar certo.
-            cout << "Acertou " << acertounumero << " no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
+            cout << "Acertou " << acertounumero << " números no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
             
             vidas = vidas - 1;
             
@@ -179,8 +181,8 @@ int main (){//ÍNICIO.
        		 } if(n1 == a1 && n2 == a2 && n3 && a3 && n4 == a4){
        		 	cout << "PARABÉNS VOCÊ DESCOBRIU A SENHA!\n\n";//Quando o usuário acertar a senha o loop é interrompido e a mensagem de vitória é exibida.
 				}if(vidas == 0){
-					cout << "VOCÊ PERDEU!\n";//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
-					return 0;//Se não acertar a senha o programa é finalizado.
+					cout << "VOCÊ PERDEU!\nsenha era: " << a1 << a2 << a3 << a4;//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
+					break;//Se não acertar a senha o programa é finalizado.
 				}
         
         acertounumero = 0;//Preciso zerar os contadores para que eles não fiquem somando.
@@ -205,7 +207,7 @@ int main (){//ÍNICIO.
 
     } while(a3 == a2 || a3 == a1);//Gero uma senha aletória de '3' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
-      //  cout << a1 << a2 << a3;	
+        cout << a1 << a2 << a3;	
     	cout << "Nesse nível você precisa descobrir uma senha de 3 dígitos em apenas 8 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n";
 		system("pause");
@@ -260,7 +262,7 @@ int main (){//ÍNICIO.
             }
             
             cout << "\nAcertou " << acertounumeroelocal << " números no lugar certo" << endl;//Mostro quantos números estão certos e no lugar certo.
-            cout << "Acertou " << acertounumero << " no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
+            cout << "Acertou " << acertounumero << " números no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
             
             vid = vid - 1;
             
@@ -269,8 +271,8 @@ int main (){//ÍNICIO.
        		 } if(n1 == a1 && n2 == a2 && n3 == a3){
        		 	cout << "PARABÉNS VOCÊ DESCOBRIU A SENHA!\n\n";//Quando o usuário acertar a senha o loop é interrompido e a mensagem de vitória é exibida.
 				}if(vid == 0){
-					cout << "VOCÊ PERDEU!\n";//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
-					return 0;//Se não acertar a senha o programa é finalizado.
+					cout << "VOCÊ PERDEU!\nsenha era: " << a1 << a2 << a3;//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
+					break;//Se não acertar a senha o programa é finalizado.
 				}
         
         acertounumero = 0;//Preciso zerar os contadores para que eles não fiquem somando.
@@ -305,7 +307,7 @@ int main (){//ÍNICIO.
     } while(a5 == a1 || a5 == a2 || a5 == a3 || a5 == a4);//Gero uma senha aletória de '5' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
     
-    //	cout << a1 << a2 << a3 << a4 << a5;
+    	cout << a1 << a2 << a3 << a4 << a5;
     	cout << "Nesse nível você precisa descobrir uma senha de 5 dígitos em apenas 12 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n";
 		system("pause");
@@ -370,7 +372,7 @@ int main (){//ÍNICIO.
             }
             
             cout << "\nAcertou " << acertounumeroelocal << " números no lugar certo" << endl;//Mostro quantos números estão certos e no lugar certo.
-            cout << "Acertou " << acertounumero << " no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
+            cout << "Acertou " << acertounumero << " números no lugar errado\n\n";//Mostro quantos números estão certos e no lugar errado.
             
             vida = vida - 1;
             
@@ -379,8 +381,8 @@ int main (){//ÍNICIO.
        		 } if(n1 == a1 && n2 == a2 && n3 && a3 && n4 == a4 && n5 == a5){
        		 	cout << "PARABÉNS VOCÊ DESCOBRIU A SENHA!\n\n";//Quando o usuário acertar a senha o loop é interrompido e a mensagem de vitória é exibida.
 				}if(vida == 0){
-					cout << "VOCÊ PERDEU!\n";//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
-					return 0;//Se não acertar a senha o programa é finalizado.
+					cout << "VOCÊ PERDEU!\nsenha era: " << a1 << a2 << a3 << a4 << a5;//Se a senha não for acertada pelo usuário a mensagem de derrota é exibida.
+					break;//Se não acertar a senha o programa é finalizado.
 				}
         
         acertounumero = 0;//Preciso zerar os contadores para que eles não fiquem somando.
@@ -388,12 +390,12 @@ int main (){//ÍNICIO.
         
     }while(n1 != a1 || n2 != a2 || n3 != a3 || n4 != a4 || n5 != a5);//O loop só acaba quando a senha for acertada ou quando as tentativas acabam.
 }
-	
-	cout << "\nDeseja voltar ao menu principal?\n ";
+
+	cout << "\n\nDeseja voltar ao menu principal?\n ";
     cout << "\n1- Sim   2- Não: " ;
     cin >> voltar;
     
-}while(voltar != 2);//Se o usuário acertar a senha ele tem a opção de voltar ao menu principal.
+}while(voltar != 2);//Se o usuário acertar ou errar a senha ele tem a opção de voltar ao menu principal.
 
 	return 0;//FIM.
 	   
