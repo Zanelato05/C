@@ -110,7 +110,7 @@ int main (){//ÍNICIO.
 
     } while(a4 == a3 || a4 == a2 || a4 == a1);//Gero uma senha aletória de '4' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
-    	//cout << a1 << a2 << a3 << a4;
+    //	cout << a1 << a2 << a3 << a4;
     	cout << "Nesse nível você precisa descobrir uma senha de 4 dígitos em apenas 10 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n\n";
 		system("pause");
@@ -207,7 +207,7 @@ int main (){//ÍNICIO.
 
     } while(a3 == a2 || a3 == a1);//Gero uma senha aletória de '3' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
-        //cout << a1 << a2 << a3;	
+        // cout << a1 << a2 << a3;	
     	cout << "Nesse nível você precisa descobrir uma senha de 3 dígitos em apenas 8 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n";
 		system("pause");
@@ -222,7 +222,7 @@ int main (){//ÍNICIO.
             cout << "Dígite a senha: ";
             cin >> senha;
        
-            n1 = (senha % 1000) / 100;//Transformo o primeiro valor dígitado em uma váriavel.
+            n1 =  senha / 100;//Transformo o primeiro valor dígitado em uma váriavel.
             n2 = (senha % 100) / 10;//Transformo o segundo valor dígitado em uma váriavel.
             n3 = senha % 10;//Transformo o terçeiro valor dígitado em uma váriavel.
             //Uso isso para que não seja necessário o usuário digitar '3' valores, sendo assim ele dígita um valor único ex: 123.
@@ -307,7 +307,7 @@ int main (){//ÍNICIO.
     } while(a5 == a1 || a5 == a2 || a5 == a3 || a5 == a4);//Gero uma senha aletória de '5' dígitos com números entre 1 e 6 e garanto que os números não se repitam.
     
     
-    	//cout << a1 << a2 << a3 << a4 << a5;
+    //	cout << a1 << a2 << a3 << a4 << a5;
     	cout << "Nesse nível você precisa descobrir uma senha de 5 dígitos em apenas 12 tentativas. BOA SORTE!";//Falo o modo de jogo dessa dificuldade.
     	cout << "\n\n\n";
 		system("pause");
